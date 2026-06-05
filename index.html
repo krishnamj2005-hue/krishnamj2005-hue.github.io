@@ -3,156 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishnaja M J - Portfolio</title>
+    <meta name="description" content="Krishnaja M J - BCA Student Portfolio | Software Development, Data Analytics, AI">
+    <meta name="keywords" content="Portfolio, BCA, Computer Applications, Software Development, Data Analytics">
+    <meta name="author" content="Krishnaja M J">
+    <title>Krishnaja M J - Portfolio | BCA Student</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%234C3A6B' width='100' height='100' rx='50'/><text x='50' y='65' font-size='45' font-weight='bold' fill='%23D8BFD8' text-anchor='middle'>KMJ</text></svg>">
 </head>
 <body>
     <!-- Animated Background Particles -->
-    <div class="particles" id="particles"></div>
+    <div class="particles-container" id="particlesContainer"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <!-- Logo with Initials -->
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
             <div class="logo">
-                <span class="logo-text">KMJ</span>
+                <div class="logo-circle">
+                    <span class="logo-text">KMJ</span>
+                </div>
             </div>
-            
-            <!-- Navigation Links -->
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#journey" class="nav-link">Learning Journey</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#goals" class="nav-link">Goals</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li class="nav-item"><a href="#goals" class="nav-link">Goals</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-
-            <!-- Theme Toggle -->
-            <div class="theme-toggle" id="themeToggle">
-                <span class="toggle-icon">🌙</span>
-            </div>
-
-            <!-- Hamburger Menu -->
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-toggle">
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Welcome Section -->
-    <section id="home" class="welcome">
-        <div class="welcome-content">
-            <h1 class="welcome-title">Welcome to My Digital Space</h1>
-            <p class="welcome-subtitle">A BCA student passionate about web development, coding, and continuous learning</p>
-            <p class="welcome-description">
-                <!-- REPLACE: Add your personal statement here -->
-                I'm Krishnaja M J, a BCA student exploring the vast world of technology. This is my digital journal showcasing my learning journey, projects, and passion for building amazing web experiences.
-            </p>
-            <div class="welcome-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" data-aos="fade-up">
+                    Hi, I'm <span class="gradient-text">Krishnaja M J</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    BCA Student | Software Developer | Data Analytics Enthusiast | AI Explorer
+                </p>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                    Passionate about building innovative solutions through technology, data analytics, and artificial intelligence.
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
             </div>
+            <div class="hero-graphic" data-aos="fade-left" data-aos-delay="300">
+                <div class="floating-card">
+                    <div class="floating-icon">💼</div>
+                    <p>Portfolio</p>
+                </div>
+                <div class="floating-card floating-card-2">
+                    <div class="floating-icon">🚀</div>
+                    <p>Projects</p>
+                </div>
+                <div class="floating-card floating-card-3">
+                    <div class="floating-icon">📊</div>
+                    <p>Analytics</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse"></span>
         </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-card glassmorphism">
-                    <h3>Who I Am</h3>
-                    <p>
-                        <!-- REPLACE: Update with your background -->
-                        I'm a passionate BCA student with a keen interest in web development and software engineering. I love turning ideas into reality through code and creating solutions that make a difference.
-                    </p>
-                </div>
-                <div class="about-card glassmorphism">
-                    <h3>What I Do</h3>
-                    <p>
-                        <!-- REPLACE: Update with your focus areas -->
-                        I specialize in full-stack web development, with expertise in frontend technologies and an enthusiasm for backend development. I'm always eager to learn new technologies and best practices.
-                    </p>
-                </div>
-                <div class="about-card glassmorphism">
-                    <h3>My Philosophy</h3>
-                    <p>
-                        <!-- REPLACE: Share your approach -->
-                        I believe in clean code, user-centric design, and continuous improvement. Every project is an opportunity to learn something new and grow as a developer.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Learning Journey Timeline -->
-    <section id="journey" class="journey">
-        <div class="container">
-            <h2 class="section-title">My Learning Journey</h2>
-            <div class="timeline">
-                <!-- Timeline Item 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content glassmorphism">
-                        <span class="timeline-date">2023</span>
-                        <h3>Foundations</h3>
-                        <p>Started with HTML, CSS, and JavaScript basics</p>
-                        <div class="timeline-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <div class="about-card glassmorphism">
+                        <h3>Welcome to My Digital Space</h3>
+                        <p>
+                            I am a third-year BCA student at Yuvakshetra Institute of Management Studies, Kerala. 
+                            My journey in computer science has been driven by curiosity and a passion for solving real-world problems through technology.
+                        </p>
+                        <p>
+                            With a strong foundation in programming and data analytics, I explore the intersection of software development, 
+                            artificial intelligence, and business intelligence. I believe in continuous learning and applying theoretical knowledge 
+                            to practical projects.
+                        </p>
+                        <p>
+                            My goal is to build a successful career in the IT industry, contributing to innovative solutions and creating 
+                            positive impact through technology.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="info-label">Location:</span>
+                                <span class="info-value">Kerala, India</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value"><a href="mailto:krishnamj2005@gmail.com">krishnamj2005@gmail.com</a></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Current Focus:</span>
+                                <span class="info-value">Software Development & Data Analytics</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Timeline Item 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content glassmorphism">
-                        <span class="timeline-date">2023-2024</span>
-                        <h3>Frontend Frameworks</h3>
-                        <p>Explored React and modern frontend development</p>
-                        <div class="timeline-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Responsive Design</span>
-                            <span class="tag">UI/UX</span>
-                        </div>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-card glassmorphism">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years in BCA</div>
                     </div>
-                </div>
-
-                <!-- Timeline Item 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content glassmorphism">
-                        <span class="timeline-date">2024-2025</span>
-                        <h3>Backend & Databases</h3>
-                        <p>Learned server-side development and database management</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                            <span class="tag">REST APIs</span>
-                        </div>
+                    <div class="stat-card glassmorphism">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Languages & Tools</div>
                     </div>
-                </div>
-
-                <!-- Timeline Item 4 -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content glassmorphism">
-                        <span class="timeline-date">2025-Present</span>
-                        <h3>Advanced Development</h3>
-                        <p>Focusing on full-stack projects and emerging technologies</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Full Stack</span>
-                            <span class="tag">Web3</span>
-                            <span class="tag">Advanced Concepts</span>
-                        </div>
+                    <div class="stat-card glassmorphism">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-card glassmorphism">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Learning Journey</div>
                     </div>
                 </div>
             </div>
@@ -162,129 +145,22 @@
     <!-- Education Section -->
     <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <!-- Primary Education -->
-                <div class="education-card glassmorphism">
-                    <div class="education-level">Primary & Secondary</div>
-                    <h3><!-- REPLACE: School/Institution Name -->School Name</h3>
-                    <p class="education-year"><!-- REPLACE: Years of Study -->Year - Year</p>
-                    <p class="education-description">
-                        <!-- REPLACE: Add achievements or highlights -->
-                        Add your primary education details here. Include achievements, scores, or highlights.
-                    </p>
-                </div>
-
-                <!-- Bachelor's Degree -->
-                <div class="education-card glassmorphism active">
-                    <div class="education-level">Bachelor's Degree</div>
-                    <h3><!-- REPLACE: Your College Name -->
-                        Bachelor of Computer Applications (BCA)
-                    </h3>
-                    <p class="education-year"><!-- REPLACE: Graduation Year -->2022 - 2025</p>
-                    <p class="education-description">
-                        <!-- REPLACE: Add college achievements -->
-                        Add your BCA college details, CGPA, relevant coursework, or achievements.
-                    </p>
-                </div>
-
-                <!-- Certifications -->
-                <div class="education-card glassmorphism">
-                    <div class="education-level">Certifications</div>
-                    <h3><!-- REPLACE: Certification Name -->Professional Courses</h3>
-                    <p class="education-year"><!-- REPLACE: Year -->Ongoing</p>
-                    <p class="education-description">
-                        <!-- REPLACE: List your certifications -->
-                        Add any online courses, certifications, or training programs you've completed.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card glassmorphism">
-                    <div class="project-header">
-                        <h3><!-- REPLACE: Project Name -->Project Name</h3>
-                        <span class="project-badge">Featured</span>
-                    </div>
-                    <p class="project-description">
-                        <!-- REPLACE: Project description -->
-                        Brief description of your project. What problem does it solve? What technologies did you use?
-                    </p>
-                    <div class="project-tags">
-                        <span class="badge"><!-- REPLACE: Technology -->HTML</span>
-                        <span class="badge"><!-- REPLACE: Technology -->CSS</span>
-                        <span class="badge"><!-- REPLACE: Technology -->JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="link-btn">View Project</a>
-                        <a href="#" class="link-btn github">GitHub</a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card glassmorphism">
-                    <div class="project-header">
-                        <h3><!-- REPLACE: Project Name -->Project Name</h3>
-                    </div>
-                    <p class="project-description">
-                        <!-- REPLACE: Project description -->
-                        Brief description of your project. What problem does it solve? What technologies did you use?
-                    </p>
-                    <div class="project-tags">
-                        <span class="badge"><!-- REPLACE: Technology -->React</span>
-                        <span class="badge"><!-- REPLACE: Technology -->Node.js</span>
-                        <span class="badge"><!-- REPLACE: Technology -->MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="link-btn">View Project</a>
-                        <a href="#" class="link-btn github">GitHub</a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card glassmorphism">
-                    <div class="project-header">
-                        <h3><!-- REPLACE: Project Name -->Project Name</h3>
-                    </div>
-                    <p class="project-description">
-                        <!-- REPLACE: Project description -->
-                        Brief description of your project. What problem does it solve? What technologies did you use?
-                    </p>
-                    <div class="project-tags">
-                        <span class="badge"><!-- REPLACE: Technology -->Python</span>
-                        <span class="badge"><!-- REPLACE: Technology -->Machine Learning</span>
-                        <span class="badge"><!-- REPLACE: Technology -->Data Science</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="link-btn">View Project</a>
-                        <a href="#" class="link-btn github">GitHub</a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card glassmorphism">
-                    <div class="project-header">
-                        <h3><!-- REPLACE: Project Name -->Project Name</h3>
-                    </div>
-                    <p class="project-description">
-                        <!-- REPLACE: Project description -->
-                        Brief description of your project. What problem does it solve? What technologies did you use?
-                    </p>
-                    <div class="project-tags">
-                        <span class="badge"><!-- REPLACE: Technology -->Vue.js</span>
-                        <span class="badge"><!-- REPLACE: Technology -->Firebase</span>
-                        <span class="badge"><!-- REPLACE: Technology -->Real-time</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="link-btn">View Project</a>
-                        <a href="#" class="link-btn github">GitHub</a>
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glassmorphism">
+                        <div class="timeline-header">
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <span class="timeline-period">2023 - 2026</span>
+                        </div>
+                        <p class="timeline-institution">Yuvakshetra Institute of Management Studies</p>
+                        <p class="timeline-location">Kerala, India</p>
+                        <ul class="timeline-details">
+                            <li><strong>Current Year:</strong> Third Year (Final Year)</li>
+                            <li><strong>Focus Areas:</strong> Software Development, Database Management, Web Development</li>
+                            <li><strong>Key Coursework:</strong> Data Structures, Object-Oriented Programming, Database Systems, Web Technologies</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -294,110 +170,261 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-container">
-                <!-- Frontend Skills -->
-                <div class="skill-category">
-                    <h3 class="category-title">Frontend Development</h3>
-                    <div class="skills-badges">
-                        <span class="skill-badge"><!-- REPLACE -->HTML5</span>
-                        <span class="skill-badge"><!-- REPLACE -->CSS3</span>
-                        <span class="skill-badge"><!-- REPLACE -->JavaScript</span>
-                        <span class="skill-badge"><!-- REPLACE -->React</span>
-                        <span class="skill-badge"><!-- REPLACE -->Responsive Design</span>
-                        <span class="skill-badge"><!-- REPLACE -->Vue.js</span>
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">C Programming</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Backend Skills -->
-                <div class="skill-category">
-                    <h3 class="category-title">Backend Development</h3>
-                    <div class="skills-badges">
-                        <span class="skill-badge"><!-- REPLACE -->Node.js</span>
-                        <span class="skill-badge"><!-- REPLACE -->Express.js</span>
-                        <span class="skill-badge"><!-- REPLACE -->Python</span>
-                        <span class="skill-badge"><!-- REPLACE -->REST APIs</span>
-                        <span class="skill-badge"><!-- REPLACE -->Server Management</span>
+                <!-- Data & Analytics -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">Data & Analytics</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Data Analytics</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Microsoft Excel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Visualization</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Database Skills -->
-                <div class="skill-category">
-                    <h3 class="category-title">Databases & Tools</h3>
-                    <div class="skills-badges">
-                        <span class="skill-badge"><!-- REPLACE -->MongoDB</span>
-                        <span class="skill-badge"><!-- REPLACE -->MySQL</span>
-                        <span class="skill-badge"><!-- REPLACE -->Firebase</span>
-                        <span class="skill-badge"><!-- REPLACE -->Git</span>
-                        <span class="skill-badge"><!-- REPLACE -->GitHub</span>
+                <!-- Web & Design -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">Web & Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML & CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GIMP Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Other Skills -->
-                <div class="skill-category">
-                    <h3 class="category-title">Other Skills</h3>
-                    <div class="skills-badges">
-                        <span class="skill-badge"><!-- REPLACE -->UI/UX Design</span>
-                        <span class="skill-badge"><!-- REPLACE -->Problem Solving</span>
-                        <span class="skill-badge"><!-- REPLACE -->Team Collaboration</span>
-                        <span class="skill-badge"><!-- REPLACE -->Project Management</span>
+                <!-- Tools & Platforms -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="category-title">Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Database Management</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="soft-skills" data-aos="fade-up">
+                <h3 class="category-title" style="text-align: center; margin-bottom: 2rem;">Professional Skills</h3>
+                <div class="soft-skills-tags">
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Team Collaboration</span>
+                    <span class="skill-tag">Project Management</span>
+                    <span class="skill-tag">Critical Thinking</span>
+                    <span class="skill-tag">Attention to Detail</span>
+                    <span class="skill-tag">Time Management</span>
+                    <span class="skill-tag">Continuous Learning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glassmorphism" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <h3>AI Tools Project</h3>
+                    </div>
+                    <p class="project-description">
+                        An exploratory project utilizing various Artificial Intelligence tools for productivity, learning, and problem-solving. 
+                        Demonstrates practical application of AI technologies in real-world scenarios.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Tools & APIs</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-status">In Progress</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glassmorphism" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <div class="project-icon">💼</div>
+                        <h3>Personal Portfolio Website</h3>
+                    </div>
+                    <p class="project-description">
+                        A responsive portfolio website developed using HTML, CSS, and JavaScript. Showcases education, skills, certifications, 
+                        and projects with a modern, professional design and smooth user experience.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-status">Completed</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Placeholder for future projects -->
+                <div class="project-card glassmorphism project-placeholder" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <div class="project-icon">✨</div>
+                        <h3>Coming Soon</h3>
+                    </div>
+                    <p class="project-description">
+                        More exciting projects and innovations in progress. Stay tuned for updates on new web applications, 
+                        data analysis projects, and AI-driven solutions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Under Development</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-status">Upcoming</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Achievements & Certifications Section -->
+    <!-- Certifications & Achievements Section -->
     <section id="achievements" class="achievements">
         <div class="container">
-            <h2 class="section-title">Achievements & Certifications</h2>
+            <h2 class="section-title" data-aos="fade-up">Certifications & Achievements</h2>
             <div class="achievements-grid">
-                <!-- Achievement 1 -->
-                <div class="achievement-card glassmorphism">
+                <div class="achievement-card glassmorphism" data-aos="fade-up">
                     <div class="achievement-icon">🏆</div>
-                    <h3><!-- REPLACE: Achievement Title -->Achievement Title</h3>
-                    <p class="achievement-issuer"><!-- REPLACE: Organization -->Organization Name</p>
-                    <p class="achievement-date"><!-- REPLACE: Date -->2024</p>
-                    <p class="achievement-description">
-                        <!-- REPLACE: Achievement description -->
-                        Brief description of your achievement or what it represents.
+                    <h3>Data Analytics Certification</h3>
+                    <p class="achievement-desc">
+                        Completed comprehensive training in data analytics, including data collection, 
+                        analysis, visualization, and interpretation using industry-standard tools.
                     </p>
+                    <div class="achievement-meta">
+                        <span class="meta-item">📅 <strong>Credentials:</strong> Data Analytics</span>
+                        <span class="meta-item">✅ <strong>Status:</strong> Verified</span>
+                    </div>
                 </div>
 
-                <!-- Achievement 2 -->
-                <div class="achievement-card glassmorphism">
-                    <div class="achievement-icon">📜</div>
-                    <h3><!-- REPLACE: Certification Title -->Certification Title</h3>
-                    <p class="achievement-issuer"><!-- REPLACE: Organization -->Organization Name</p>
-                    <p class="achievement-date"><!-- REPLACE: Date -->2024</p>
-                    <p class="achievement-description">
-                        <!-- REPLACE: Certification description -->
-                        Brief description of your certification and what skills it validates.
+                <div class="achievement-card glassmorphism" data-aos="fade-up" data-aos-delay="100">
+                    <div class="achievement-icon">🎨</div>
+                    <h3>GIMP Certification</h3>
+                    <p class="achievement-desc">
+                        Proficiency certification in GIMP (GNU Image Manipulation Program) for digital image editing, 
+                        design, and graphic creation. Demonstrates expertise in visual design tools.
                     </p>
+                    <div class="achievement-meta">
+                        <span class="meta-item">📅 <strong>Credentials:</strong> GIMP Design</span>
+                        <span class="meta-item">✅ <strong>Status:</strong> Verified</span>
+                    </div>
                 </div>
 
-                <!-- Achievement 3 -->
-                <div class="achievement-card glassmorphism">
-                    <div class="achievement-icon">⭐</div>
-                    <h3><!-- REPLACE: Achievement Title -->Achievement Title</h3>
-                    <p class="achievement-issuer"><!-- REPLACE: Organization -->Organization Name</p>
-                    <p class="achievement-date"><!-- REPLACE: Date -->2024</p>
-                    <p class="achievement-description">
-                        <!-- REPLACE: Achievement description -->
-                        Brief description of your achievement or recognition.
+                <div class="achievement-card glassmorphism" data-aos="fade-up" data-aos-delay="200">
+                    <div class="achievement-icon">🎓</div>
+                    <h3>Academic Excellence</h3>
+                    <p class="achievement-desc">
+                        Demonstrated consistent performance in academic coursework with focus on practical application 
+                        of computer science concepts and emerging technologies.
                     </p>
+                    <div class="achievement-meta">
+                        <span class="meta-item">📅 <strong>Duration:</strong> 3 Years (BCA)</span>
+                        <span class="meta-item">✅ <strong>Status:</strong> In Progress (Final Year)</span>
+                    </div>
                 </div>
 
-                <!-- Achievement 4 -->
-                <div class="achievement-card glassmorphism">
-                    <div class="achievement-icon">🎖️</div>
-                    <h3><!-- REPLACE: Achievement Title -->Achievement Title</h3>
-                    <p class="achievement-issuer"><!-- REPLACE: Organization -->Organization Name</p>
-                    <p class="achievement-date"><!-- REPLACE: Date -->2024</p>
-                    <p class="achievement-description">
-                        <!-- REPLACE: Achievement description -->
-                        Brief description of your achievement or award.
+                <div class="achievement-card glassmorphism" data-aos="fade-up" data-aos-delay="300">
+                    <div class="achievement-icon">🚀</div>
+                    <h3>Project Development</h3>
+                    <p class="achievement-desc">
+                        Successfully conceptualized and developed multiple projects integrating various technologies, 
+                        demonstrating practical application of learning and problem-solving abilities.
                     </p>
+                    <div class="achievement-meta">
+                        <span class="meta-item">📅 <strong>Projects:</strong> 2+ Completed</span>
+                        <span class="meta-item">✅ <strong>Status:</strong> Active Development</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -406,28 +433,89 @@
     <!-- Career Goals Section -->
     <section id="goals" class="goals">
         <div class="container">
-            <h2 class="section-title">Career Goals & Aspirations</h2>
+            <h2 class="section-title" data-aos="fade-up">Career Goals & Vision</h2>
             <div class="goals-content">
-                <div class="goals-text glassmorphism">
-                    <h3>My Vision</h3>
-                    <p>
-                        <!-- REPLACE: Your career objective -->
-                        My primary goal is to become a proficient full-stack developer and contribute to innovative projects that make a positive impact. I aspire to work with cutting-edge technologies and collaborate with talented teams to build scalable, user-centric applications.
-                    </p>
-                    <h3>Short-term Goals (1-2 years)</h3>
-                    <ul class="goals-list">
-                        <li><!-- REPLACE -->Complete BCA degree with distinction</li>
-                        <li><!-- REPLACE -->Build 5+ production-ready projects</li>
-                        <li><!-- REPLACE -->Secure internship at a tech company</li>
-                        <li><!-- REPLACE -->Master advanced web development concepts</li>
-                    </ul>
-                    <h3>Long-term Goals (3+ years)</h3>
-                    <ul class="goals-list">
-                        <li><!-- REPLACE -->Become a senior software developer</li>
-                        <li><!-- REPLACE -->Lead technical teams and projects</li>
-                        <li><!-- REPLACE -->Contribute to open-source projects</li>
-                        <li><!-- REPLACE -->Continuously learn and adapt to new technologies</li>
-                    </ul>
+                <div class="goals-timeline">
+                    <div class="goal-item" data-aos="fade-right">
+                        <div class="goal-marker">
+                            <span class="goal-number">1</span>
+                        </div>
+                        <div class="goal-content glassmorphism">
+                            <h3>Short-Term (Next 1-2 Years)</h3>
+                            <ul>
+                                <li>Secure a position as a Software Developer or Data Analyst in a reputable IT company</li>
+                                <li>Complete BCA degree with strong academic performance</li>
+                                <li>Develop proficiency in modern frameworks and tools (React, Django, etc.)</li>
+                                <li>Build a strong GitHub portfolio with meaningful projects</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="goal-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="goal-marker">
+                            <span class="goal-number">2</span>
+                        </div>
+                        <div class="goal-content glassmorphism">
+                            <h3>Mid-Term (2-5 Years)</h3>
+                            <ul>
+                                <li>Gain expertise in full-stack development or specialized data science domain</li>
+                                <li>Lead small development teams and mentor junior developers</li>
+                                <li>Pursue advanced certifications in AI/Machine Learning or Cloud Technologies</li>
+                                <li>Contribute to open-source projects and tech community</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="goal-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="goal-marker">
+                            <span class="goal-number">3</span>
+                        </div>
+                        <div class="goal-content glassmorphism">
+                            <h3>Long-Term Vision (5+ Years)</h3>
+                            <ul>
+                                <li>Establish expertise in emerging technologies (AI, Blockchain, IoT)</li>
+                                <li>Potentially start own tech venture or consultant business</li>
+                                <li>Become a technical leader driving innovation in the IT industry</li>
+                                <li>Create positive impact through technology-driven solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goals-summary" data-aos="fade-left">
+                    <div class="summary-card glassmorphism">
+                        <h3>My Core Principles</h3>
+                        <div class="principles-list">
+                            <div class="principle">
+                                <span class="principle-icon">💡</span>
+                                <div>
+                                    <h4>Innovation First</h4>
+                                    <p>Always seek creative solutions to complex problems</p>
+                                </div>
+                            </div>
+                            <div class="principle">
+                                <span class="principle-icon">📚</span>
+                                <div>
+                                    <h4>Continuous Learning</h4>
+                                    <p>Stay updated with latest technologies and industry trends</p>
+                                </div>
+                            </div>
+                            <div class="principle">
+                                <span class="principle-icon">🤝</span>
+                                <div>
+                                    <h4>Collaboration</h4>
+                                    <p>Work effectively with teams to achieve shared objectives</p>
+                                </div>
+                            </div>
+                            <div class="principle">
+                                <span class="principle-icon">⚡</span>
+                                <div>
+                                    <h4>Excellence</h4>
+                                    <p>Maintain high quality standards in all work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -436,39 +524,79 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
             <div class="contact-content">
-                <p class="contact-intro">
-                    I'm always interested in hearing about new projects and opportunities. Feel free to reach out!
-                </p>
-                <div class="contact-grid">
-                    <!-- Email -->
-                    <a href="mailto:<!-- REPLACE: Your email -->your.email@example.com" class="contact-card glassmorphism">
-                        <div class="contact-icon">✉️</div>
-                        <h3>Email</h3>
-                        <p><!-- REPLACE: Your email -->your.email@example.com</p>
-                    </a>
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card glassmorphism">
+                        <h3>Get In Touch</h3>
+                        <p>I'm always open to new opportunities, collaborations, and conversations. Feel free to reach out!</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:krishnamj2005@gmail.com">krishnamj2005@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>Kerala, India</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">🎓</div>
+                                <div class="contact-details">
+                                    <h4>Education</h4>
+                                    <p>BCA (Third Year)</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- LinkedIn -->
-                    <a href="https://linkedin.com/in/<!-- REPLACE: Your LinkedIn username -->" target="_blank" class="contact-card glassmorphism">
-                        <div class="contact-icon">💼</div>
-                        <h3>LinkedIn</h3>
-                        <p><!-- REPLACE: Your LinkedIn -->linkedin.com/in/yourprofile</p>
-                    </a>
+                        <div class="social-links">
+                            <h4>Connect With Me</h4>
+                            <div class="social-icons">
+                                <a href="https://github.com" title="GitHub" class="social-icon" target="_blank" rel="noopener noreferrer">
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://linkedin.com" title="LinkedIn" class="social-icon" target="_blank" rel="noopener noreferrer">
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://twitter.com" title="Twitter" class="social-icon" target="_blank" rel="noopener noreferrer">
+                                    <span>Twitter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- GitHub -->
-                    <a href="https://github.com/<!-- REPLACE: Your GitHub username -->" target="_blank" class="contact-card glassmorphism">
-                        <div class="contact-icon">🐙</div>
-                        <h3>GitHub</h3>
-                        <p><!-- REPLACE: Your GitHub -->github.com/yourprofile</p>
-                    </a>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" class="form glassmorphism">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
 
-                    <!-- Twitter/X -->
-                    <a href="https://twitter.com/<!-- REPLACE: Your Twitter handle -->" target="_blank" class="contact-card glassmorphism">
-                        <div class="contact-icon">𝕏</div>
-                        <h3>Twitter</h3>
-                        <p><!-- REPLACE: Your Twitter -->@yourhandle</p>
-                    </a>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Your message here..." rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                        <p class="form-note">This form is for demonstration. To make it fully functional, integrate with a backend service or email API.</p>
+                    </form>
                 </div>
             </div>
         </div>
@@ -477,14 +605,38 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Krishnaja M J. All rights reserved.</p>
-            <p>Designed with <span class="heart">❤️</span> using HTML, CSS & JavaScript</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About This Portfolio</h4>
+                    <p>A modern, responsive portfolio website showcasing my skills, projects, and academic journey as a BCA student.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technologies Used</h4>
+                    <p>HTML5, CSS3, JavaScript, GitHub Pages</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Krishnaja M J. All rights reserved.</p>
+                <p>Built with 💜 and passion for technology</p>
+            </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">↑</button>
+    <button class="back-to-top" id="backToTop" title="Back to top">
+        <span>↑</span>
+    </button>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
